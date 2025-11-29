@@ -309,6 +309,26 @@
     --tw-ease: var(--ease-in-out);
     transition-timing-function: var(--ease-in-out);
   }
+  .max-md\:top-10 {
+    @media (width < 48rem) {
+      top: calc(var(--spacing) * 10);
+    }
+  }
+  .max-md\:top-20 {
+    @media (width < 48rem) {
+      top: calc(var(--spacing) * 20);
+    }
+  }
+  .max-md\:bottom-15 {
+    @media (width < 48rem) {
+      bottom: calc(var(--spacing) * 15);
+    }
+  }
+  .max-md\:bottom-32 {
+    @media (width < 48rem) {
+      bottom: calc(var(--spacing) * 32);
+    }
+  }
   .max-md\:-left-2 {
     @media (width < 48rem) {
       left: calc(var(--spacing) * -2);
@@ -381,6 +401,16 @@
     @media (width < 48rem) {
       font-size: var(--text-lg);
       line-height: var(--tw-leading, var(--text-lg--line-height));
+    }
+  }
+  .md\:top-1 {
+    @media (width >= 48rem) {
+      top: calc(var(--spacing) * 1);
+    }
+  }
+  .md\:bottom-7 {
+    @media (width >= 48rem) {
+      bottom: calc(var(--spacing) * 7);
     }
   }
   .md\:left-10 {
