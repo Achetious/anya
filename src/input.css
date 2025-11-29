@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&display=swap");
+@import "tailwindcss";
+/* npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch */
+
+@theme {
+  --font-bubblegum: "Fuzzy Bubbles", sans-serif;
+}
+
+body {
+  @apply font-bubblegum;
+}
+
+@keyframes sway-up-down {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.float {
+  animation: sway-up-down 4s ease-in-out infinite;
+}
+
+@keyframes sway-left-right {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-7deg);
+  }
+  100% {
+    transform: rotate(5deg);
+  }
+}
+
+.head-sway {
+  animation: sway-left-right 2s ease-in-out infinite alternate;
+
+  transform-origin: center 80%;
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>You're Invited!!</title>
+    <link rel="stylesheet" href="src/output.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+
+<body class="bg-[#FFE8E3]">
+    <section
+        class="relative overflow-hidden bg-[url('../img/assets/bg1.png')] bg-cover bg-center h-screen flex justify-center items-center">
+
+        <img src="../img/assets/clouds/9.png" class="cloud absolute w-96 top-1 left-10" data-aos="fade-right"
+            data-aos-duration="3000" data-aos-anchor-placement="top-bottom">
+        <img src="../img/assets/clouds/10.png" class="cloud absolute w-80 top-1 right-0" data-aos="fade-left"
+            data-aos-duration="3000" data-aos-anchor-placement="top-bottom">
+        <img src="../img/assets/clouds/11.png" class="cloud absolute w-48 top-60 left-5" data-aos="fade-right"
+            data-aos-duration="3000" data-aos-anchor-placement="top-bottom">
+        <img src="../img/assets/clouds/12.png" class="cloud absolute w-96 top-72 right-16" data-aos="fade-left"
+            data-aos-duration="3000" data-aos-anchor-placement="top-bottom">
+        <img src="../img/assets/clouds/13.png" class="cloud absolute w-72 bottom-10 right-10" data-aos="fade-left"
+            data-aos-duration="3000" data-aos-anchor-placement="top-bottom">
+        <img src="../img/assets/clouds/9.png" class="cloud absolute w-80 bottom-7 left-20" data-aos="fade-right"
+            data-aos-duration="3000" data-aos-anchor-placement="top-bottom">
+
+        <div class="flex flex-col items-center">
+            <div class="relative text-2xl" data-aos="flip-down" data-aos-duration="800">
+                <svg viewBox="0 0 300 125" class="w-96 h-40">
+                    <path id="curve" d="M 50,150 A 100,100 0 0,1 250,150" fill="transparent" />
+                    <text text-anchor="middle" class="md:text-3xl max-md:text-lg font-semibold fill-gray-800">
+                        <textPath href="#curve" startOffset="50%">
+                            WELCOME TO
+                        </textPath>
+                    </text>
+                </svg>
+            </div>
+            <div class="font-extrabold font-cursive text-7xl" data-aos="zoom-in" data-aos-duration="1000"
+                data-aos-delay="500">
+                Anya's Christening
+            </div>
+            <img src="img/3.png" class="w-96 mt-5" id="main-image" data-aos="fade-up" data-aos-duration="1500"
+                data-aos-delay="1000">
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true,
+        });
+
+        document.addEventListener("DOMContentLoaded", () => {
+            const clouds = document.querySelectorAll(".cloud");
+            const mainImage = document.getElementById("main-image");
+
+            const getAOSDuration = (element) => {
+                const duration = parseInt(element.getAttribute('data-aos-duration') || '0');
+                const delay = parseInt(element.getAttribute('data-aos-delay') || '0');
+                return duration + delay;
+            };
+
+            clouds.forEach(cloud => {
+                const delayTime = getAOSDuration(cloud);
+
+                setTimeout(() => {
+                    cloud.classList.add("float");
+                }, delayTime);
+            });
+
+            if (mainImage) {
+                const delayTime = getAOSDuration(mainImage);
+                setTimeout(() => {
+                    mainImage.classList.add("head-sway");
+                }, delayTime);
+            }
+        });
+    </script>
+
+</body>
+
+</html>
