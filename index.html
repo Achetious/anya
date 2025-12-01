@@ -11,26 +11,27 @@
 </head>
 
 <body class="bg-[#FFE8E3]">
+    <!-- LANDING -->
     <section
         class="relative overflow-hidden bg-[url('../img/assets/bg1.png')] bg-cover bg-center h-screen flex justify-center items-center">
 
         <img loading="lazy" src="img/ulap/9.png"
-            class="cloud absolute md:w-96 max-md:w-40 top-1 md:left-10 max-md:left-2" data-aos="fade-right"
+            class="z-10 cloud absolute md:w-96 max-md:w-40 top-1 md:left-10 max-md:left-2" data-aos="fade-right"
             data-aos-duration="3000">
         <img loading="lazy" src="img/ulap/10.png"
-            class="cloud absolute md:w-80 max-md:w-36 md:top-1 max-md:top-20 right-0" data-aos="fade-left"
+            class="z-10 cloud absolute md:w-80 max-md:w-36 md:top-1 max-md:top-20 right-0" data-aos="fade-left"
             data-aos-duration="3000">
-        <img loading="lazy" src="img/ulap/11.png" class="cloud absolute md:w-48 max-md:w-28 top-60 left-5"
+        <img loading="lazy" src="img/ulap/11.png" class="z-10 cloud absolute md:w-48 max-md:w-28 top-60 left-5"
             data-aos="fade-right" data-aos-duration="3000">
-        <img loading="lazy" src="img/ulap/12.png" class="cloud absolute md:w-96 max-md:w-40 top-72 right-16"
+        <img loading="lazy" src="img/ulap/12.png" class="z-10 cloud absolute md:w-96 max-md:w-40 top-72 right-16"
             data-aos="fade-left" data-aos-duration="3000">
-        <img loading="lazy" src="img/ulap/13.png" class="cloud absolute md:w-72 max-md:w-36 bottom-10 right-10"
-            data-aos="fade-left" data-aos-duration="3000">
+        <img loading="lazy" src="img/ulap/13.png" class="z-10 cloud absolute md:w-72 max-md:w-36 bottom-10 right-10"
+            data-aos="fade-left" data-aos-duration="3000" data-aos-anchor-placement="bottom-bottom">
         <img loading="lazy" src="img/ulap/9.png"
-            class="cloud absolute md:w-80 max-md:w-42 md:bottom-26 max-md:bottom-32 md:left-20 max-md:-left-5"
-            data-aos="fade-right" data-aos-duration="3000">
+            class="z-10 cloud absolute md:w-80 max-md:w-42 md:bottom-26 max-md:bottom-32 md:left-20 max-md:-left-5"
+            data-aos="fade-right" data-aos-duration="3000" data-aos-anchor-placement="bottom-bottom">
 
-        <div class="flex flex-col items-center">
+        <div class="flex flex-col items-center z-10">
             <div class="relative text-2xl" data-aos="flip-down" data-aos-duration="800">
                 <svg viewBox="0 0 300 125" class="w-96 h-40">
                     <path id="curve" d="M 50,150 A 100,100 0 0,1 250,150" fill="transparent" />
@@ -47,9 +48,16 @@
             </div>
             <img loading="lazy" src="img/3.png" class="w-96 mt-5" id="main-image" data-aos="fade-up"
                 data-aos-duration="1500" data-aos-delay="1000">
+            <a href="#RSVP" class="mt-5" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1500">
+                <button type="button"
+                    class="text-white bg-gradient-to-br from-pink-500 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800 font-medium rounded-base text-lg px-4 py-2.5 text-center leading-5 w-30">RSVP
+                </button>
+            </a>
         </div>
+        <div id="bear-container" class="pointer-events-none absolute inset-0 overflow-hidden"></div>
     </section>
 
+    <!-- EVENT DETAILS -->
     <section
         class="relative overflow-hidden bg-cover bg-center lg:h-screen max-lg:h-full grid lg:grid-cols-2 max-lg:grid-cols-1 justify-center items-center">
         <div
@@ -62,12 +70,14 @@
                 data-aos-duration="1500">
                 Event Details
             </div>
-            <div class="flex justify-center md:p-10 max-md:p-16 max-md:pt-0 gap-0 max-md:flex-col max-md:items-center">
+            <div
+                class="flex justify-center md:p-10 max-md:p-16 max-md:pt-0 max-md:gap-6 max-md:flex-col max-md:items-center">
                 <div class="flex flex-col md:w-[30%] max-md:w-full gap-1 items-center text-center" data-aos="fade-in"
                     data-aos-duration="2000" data-aos-delay="300">
                     <img loading="lazy" src="img/assets/events/calendar.png" alt="" class="rounded-2xl max-md:w-1/2">
                     <span class="font-extrabold text-lg">December 07, 2025</span>
                     Sunday
+
                 </div>
                 <div class="flex flex-col md:w-[30%] max-md:w-full gap-1 items-center text-center" data-aos="fade-in"
                     data-aos-duration="2000" data-aos-delay="600">
@@ -85,17 +95,18 @@
         </div>
     </section>
 
+    <!-- DRESS CODE -->
     <section
-        class="relative overflow-hidden bg-[url('../img/assets/bg1.png')] bg-cover bg-center lg:h-screen max-lg:h-full p-10 flex justify-center items-center flex-col gap-10">
-        <div class="font-extrabold md:text-5xl max-md:text-3xl" data-aos="fade-down" data-aos-duration="1500">
+        class="relative overflow-hidden bg-[url('../img/assets/bg3.png')] bg-cover bg-center lg:h-screen max-lg:h-full p-10 flex justify-center items-center flex-col gap-10">
+        <div class="font-extrabold md:text-5xl max-md:text-3xl z-10" data-aos="fade-down" data-aos-duration="1500">
             Dress Code
         </div>
-        <p class="md:text-2xl max-md:text-lg text-center" data-aos="fade-in" data-aos-duration="1500"
+        <p class="md:text-2xl max-md:text-lg text-center z-10" data-aos="fade-in" data-aos-duration="1500"
             data-aos-delay="500">
             We humbly request that you wear comfortable white clothing. <br>
             Please avoid wearing dark colored top.
         </p>
-        <div class="flex items-center justify-center flex-wrap max-md:gap-5">
+        <div class="flex items-center justify-center flex-wrap max-md:gap-5 z-10">
             <img loading="lazy" src="img\assets\clothes\1.png" alt="" class="md:w-52 max-md:w-36" data-aos="zoom-in-up"
                 data-aos-duration="1500" data-aos-delay="">
             <img loading="lazy" src="img\assets\clothes\7.png" alt="" class="md:w-52 max-md:w-36" data-aos="zoom-in-up"
@@ -113,8 +124,10 @@
             <img loading="lazy" src="img\assets\clothes\4.png" alt="" class="md:w-52 max-md:w-36" data-aos="zoom-in-up"
                 data-aos-duration="1500" data-aos-delay="700">
         </div>
+        <div id="bear-container1" class="pointer-events-none absolute inset-0 overflow-hidden"></div>
     </section>
 
+    <!-- GIFT GUIDES -->
     <section
         class="relative overflow-hidden bg-cover bg-center lg:h-screen max-lg:h-full grid lg:grid-cols-2 max-lg:grid-cols-1 justify-center items-center">
         <div class="flex justify-center items-center h-full flex-col gap-5 max-lg:order-2">
@@ -122,13 +135,13 @@
                 data-aos-duration="1500">
                 Gift Guides
             </div>
-            <p class="md:text-2xl max-md:text-lg text-center px-10" data-aos="fade-in" data-aos-duration="1500"
-                data-aos-delay="500">
+            <p class="md:text-2xl max-md:text-lg text-center md:px-30 max-md:px-10" data-aos="fade-in"
+                data-aos-duration="1500" data-aos-delay="500">
                 Your prayers and presence are all that we request. But if you desire to give nonetheless, these are the
                 things that we would appreciate.
             </p>
             <div
-                class="flex justify-center md:p-10 max-md:p-16 max-md:pt-0 gap-5 max-md:gap-0 max-md:flex-col max-md:items-center">
+                class="flex justify-center md:p-10 max-md:p-16 max-md:pb-0 max-md:pt-0 gap-5 max-md:gap-0 max-md:flex-col max-md:items-center">
                 <div class="flex flex-col md:w-[25%] max-md:w-full gap-1 items-center text-center" data-aos="fade-in"
                     data-aos-duration="2000" data-aos-delay="300">
                     <img loading="lazy" src="img\assets\gifts\9.png" alt="" class="rounded-2xl max-md:w-1/2">
@@ -150,6 +163,11 @@
                     <span class="font-extrabold text-lg">Monetary Gift</span>
                 </div>
             </div>
+            <p class="md:text-2xl max-md:text-lg text-center md:px-30 max-md:p-10 max-md:pb-16" data-aos="fade-up"
+                data-aos-duration="1500" data-aos-delay="1000">
+                Just because we gave ideas doesn't mean you are obligated to give. <strong>Love</strong>,
+                <strong>Prayer</strong>, and your <strong>Presence</strong> is the most precious gift you can give.
+            </p>
         </div>
         <div
             class="lg:bg-[url('../img/section2.jpg')] lg:bg-cover lg:bg-center h-full max-lg:flex max-lg:justify-center max-lg:p-10  max-lg:order-1">
@@ -158,19 +176,63 @@
         </div>
     </section>
 
-    <section
-        class="relative overflow-hidden bg-cover bg-center lg:h-screen max-lg:h-full grid lg:grid-cols-2 max-lg:grid-cols-1 justify-center items-center">
+    <!-- RSVP -->
+    <section id="RSVP"
+        class="relative overflow-hidden bg-[url('../img/assets/bg2.png')] bg-cover bg-center lg:h-screen max-lg:h-screen p-10 flex justify-center items-center flex-col md:gap-10 max-md:gap-3">
+        <div class="font-extrabold md:text-5xl max-md:text-3xl z-10" data-aos="fade-in" data-aos-duration="1500">
+            RSVP
+        </div>
+        <p class="md:text-2xl max-md:text-lg text-center md:px-90 max-md:10 z-10" data-aos="fade-in"
+            data-aos-duration="1500" data-aos-delay="">
+            With joy in our hearts, we kindly ask for your presence as <strong>Baby Anya</strong>
+            receives the Sacrament of Baptism and celebrates this special day.
+            To help us prepare a wonderful gathering filled with pink balloons
+            and soft delights, please let us know if you can join our
+            celebration of faith and family.
+            <br><br>
+            Kindly RSVP by <strong>December 05, 2025</strong> so we can secure your spot in this sweet, cozy affair!
+        </p>
+        <div class="flex flex-col items-center gap-2 mt-2" data-aos="fade-up" data-aos-duration="2000"
+            data-aos-delay="700">
+            <span class="font-extrabold block md:text-2xl max-md:text-xl">
+                Please RSVP to Mommy via:
+            </span>
+            <a href="https://www.facebook.com/dyj0617" target="_blank"
+                class="flex items-center gap-2 text-[#822c2d] hover:text-[#5c1f20]">
+                <i class="fa-brands fa-facebook-square fa-xl"></i>
+                <span class="md:text-2xl max-md:text-xl">Nicole Barrozo</span>
+            </a>
 
+            <a href="tel:+639940913990" class="flex items-center gap-2 text-[#822c2d] hover:text-[#5c1f20]">
+                <i class="fa-solid fa-phone fa-xl"></i>
+                <span class="md:text-2xl max-md:text-xl">+63 9940913990</span>
+            </a>
+
+        </div>
+        <div id="bear-container2" class="pointer-events-none absolute inset-0 overflow-hidden"></div>
     </section>
 
+    <!-- AOS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        AOS.init({
-            once: true,
-            anchorPlacement: 'top-bottom',
-        });
-
         document.addEventListener("DOMContentLoaded", () => {
+            const isMobile = window.innerWidth < 768;
+
+            if (isMobile) {
+                const elementsWithDelay = document.querySelectorAll('[data-aos-delay]');
+
+                elementsWithDelay.forEach(element => {
+                    element.removeAttribute('data-aos-delay');
+                });
+            }
+
+            // AOS
+            AOS.init({
+                once: true,
+                anchorPlacement: 'top-bottom',
+            });
+
+            // CLOUD JS
             const ulap = document.querySelectorAll(".cloud");
             const mainImage = document.getElementById("main-image");
 
@@ -194,6 +256,65 @@
                     mainImage.classList.add("head-sway");
                 }, delayTime);
             }
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const containerIds = ["bear-container", "bear-container1", "bear-container2"];
+
+            const isMobile = window.innerWidth < 768; // --- Configuration (Set up based on screen size) --- 
+            let MIN_SIZE = 160;
+            let MAX_SIZE = 320;
+            let MIN_SPEED = 7000;
+            let MAX_SPEED = 15000;
+            let MAX_BEARS_ON_SCREEN = 4;
+            let SPAWN_INTERVAL = 1500;
+            if (isMobile) {
+                MIN_SIZE = 90;
+                MAX_SIZE = 200;
+                MAX_BEARS_ON_SCREEN = 6;
+                SPAWN_INTERVAL = 1000;
+            }
+            function initializeBearSpawner(containerElement) {
+
+                function spawnBear() {
+                    if (containerElement.children.length >= MAX_BEARS_ON_SCREEN) return;
+
+                    const size = Math.floor(Math.random() * (MAX_SIZE - MIN_SIZE)) + MIN_SIZE;
+                    const speed = Math.floor(Math.random() * (MAX_SPEED - MIN_SPEED)) + MIN_SPEED;
+                    const startX = Math.random() * (window.innerWidth - size);
+
+                    const bear = document.createElement("img");
+                    bear.src = "img/assets/8.png";
+                    bear.className = "absolute bear-sway z-0";
+                    bear.style.width = `${size}px`;
+                    bear.style.left = `${startX}px`;
+                    bear.style.opacity = "0.9";
+
+                    bear.style.transition = `bottom ${speed}ms linear`;
+
+                    bear.style.bottom = `-${MAX_SIZE}px`;
+
+                    containerElement.appendChild(bear);
+
+                    setTimeout(() => {
+                        bear.style.bottom = `110vh`;
+                    }, 50);
+
+                    setTimeout(() => {
+                        bear.remove();
+                    }, speed + 500);
+                }
+
+                setInterval(spawnBear, SPAWN_INTERVAL);
+            }
+
+            containerIds.forEach(id => {
+                const container = document.getElementById(id);
+                if (container) {
+                    initializeBearSpawner(container);
+                }
+            });
         });
     </script>
     <!-- Flowbite -->
