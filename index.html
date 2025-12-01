@@ -142,8 +142,8 @@
                 Your prayers and presence are all that we request. But if you desire to give nonetheless, these are the
                 things that we would appreciate.
             </p>
-            <div
-                class="flex justify-center md:p-10 max-md:p-16 max-md:pb-0 max-md:pt-0 gap-5 max-md:gap-0 max-md:flex-col max-md:items-center">
+            <div class="flex justify-center md:p-10 max-md:p-16 max-md:pb-0 max-md:pt-0 gap-5 max-md:gap-0 max-md:flex-col max-md:items-center"
+                data-aos-anchor="#gift-guide-anchor">
                 <div class="flex flex-col md:w-[25%] max-md:w-full gap-1 items-center text-center" data-aos="fade-in"
                     data-aos-duration="2000" data-aos-delay="300">
                     <img loading="lazy" src="img\assets\gifts\9.png" alt="" class="rounded-2xl max-md:w-1/2">
@@ -171,8 +171,8 @@
                 <strong>Prayer</strong>, and your <strong>Presence</strong> is the most precious gift you can give.
             </p>
         </div>
-        <div
-            class="lg:bg-[url('../img/section2.jpg')] lg:bg-cover lg:bg-center h-full max-lg:flex max-lg:justify-center max-lg:p-10  max-lg:order-1">
+        <div class="lg:bg-[url('../img/section2.jpg')] lg:bg-cover lg:bg-center h-full max-lg:flex max-lg:justify-center max-lg:p-10 max-lg:order-1"
+            id="gift-guide-anchor">
             <img loading="lazy" src="img/section2.jpg" alt=""
                 class="z-20 lg:hidden max-lg:block bg-center w-96 rounded-2xl">
         </div>
@@ -230,8 +230,7 @@
 
             // AOS
             AOS.init({
-                once: true,
-                anchorPlacement: 'top-bottom',
+                once: false,
             });
 
             // CLOUD JS
@@ -274,7 +273,7 @@
             if (isMobile) {
                 MIN_SIZE = 90;
                 MAX_SIZE = 200;
-                MAX_BEARS_ON_SCREEN = 6;
+                MAX_BEARS_ON_SCREEN = 5;
                 SPAWN_INTERVAL = 1000;
             }
             function initializeBearSpawner(containerElement) {
@@ -291,7 +290,7 @@
                     bear.className = "absolute bear-sway z-0";
                     bear.style.width = `${size}px`;
                     bear.style.left = `${startX}px`;
-                    bear.style.opacity = "0.9";
+                    bear.style.opacity = "0.5";
 
                     bear.style.transition = `bottom ${speed}ms linear`;
 
