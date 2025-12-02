@@ -281,7 +281,6 @@
     --color-heading: var(--color-gray-900);
     --color-fg-brand: var(--color-blue-700);
     --color-fg-disabled: var(--color-gray-400);
-    --color-neutral-primary-soft: var(--color-white);
     --color-neutral-primary: var(--color-white);
     --color-neutral-primary-medium: var(--color-white);
     --color-neutral-secondary-soft: var(--color-gray-50);
@@ -1358,9 +1357,6 @@
   .w-5 {
     width: calc(var(--spacing) * 5);
   }
-  .w-16 {
-    width: calc(var(--spacing) * 16);
-  }
   .w-30 {
     width: calc(var(--spacing) * 30);
   }
@@ -2036,6 +2032,9 @@
   }
   .uppercase {
     text-transform: uppercase;
+  }
+  .underline {
+    text-decoration-line: underline;
   }
   .opacity-0 {
     opacity: 0%;
